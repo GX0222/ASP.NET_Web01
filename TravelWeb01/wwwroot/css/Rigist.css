@@ -1,0 +1,72 @@
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        .left-side {
+            background-color: #d2b48c;
+            /* 淡奶茶色背景 */
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #634b33;
+            /* 深奶茶色文字顏色 */
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+
+        }
+
+        .right-side {
+            background-color: #fff;
+            /* 白色背景 */
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            /* 淡透明白色 */
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #8b4513;
+            /* 深奶茶色 */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #634b33;
+            /* 輕奶茶色 */
+        }

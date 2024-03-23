@@ -1,0 +1,19 @@
+/* 觀景窗 */
+#tfIframeContainer {
+    position: relative;
+    width: 100%;
+    height: 50vw;
+    overflow: hidden;
+    margin-top: 0px;
+    padding: 0px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+#tfYoutubeIframe {
+    margin-top: 0px;
+    margin-left: 0PX;
+    width: 100%;
+    height: 100%;
+}

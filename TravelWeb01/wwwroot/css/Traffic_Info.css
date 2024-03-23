@@ -1,0 +1,96 @@
+/*********************************TF_info **********************************************/
+
+
+a#TfIinfoText {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.8vw;
+    color: rgb(72, 51, 30);
+
+}
+
+a#TfIinfoText:link {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText:visited {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText:hover {
+    color: rgb(72, 51, 30);
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 254, 0.4);
+}
+
+.nav-pills>li>a.active {
+    color: #ffffff !important;
+    background-color: rgba(152, 115, 78, 0.4) !important;
+}
+
+
+/*******************************TF_info 2*****************************/
+
+a#TfIinfoText2 {
+    text-align: center;
+    text-decoration: none;
+
+    padding: 5px;
+    /* font-size: 1rem; */
+    font-size: 1.7vw;
+    color: rgb(72, 51, 30);
+
+}
+
+a#TfIinfoText2:link {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText2:visited {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText2:hover {
+    color: rgb(72, 51, 30);
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 254, 0.4);
+}
+
+.nav-pills>li>a.active {
+    color: #ffffff !important;
+    background-color: rgba(152, 115, 78, 0.4) !important;
+}
+
+/*******************************TF_info 3*****************************/
+
+a#TfIinfoText3 {
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1.8vw;
+    color: rgb(72, 51, 30);
+
+}
+
+a#TfIinfoText3:link {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText3:visited {
+    color: rgb(0, 0, 0);
+}
+
+a#TfIinfoText3:hover {
+    color: rgb(72, 51, 30);
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(255, 255, 254, 0.4);
+}
+
+.nav-pills>li>a.active {
+    color: #ffffff !important;
+    background-color: rgba(152, 115, 78, 0.4) !important;
+}

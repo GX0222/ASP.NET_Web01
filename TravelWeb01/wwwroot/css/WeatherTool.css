@@ -1,0 +1,168 @@
+@charset "UTF-8";
+
+div.weatherDiv {
+	width: 100%;
+	height: 230px;
+	margin: 0px;
+	padding: 5px;
+/* 	border: solid 2px rgba(0, 0, 0, 0.1); */
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+	border-radius: 20px;
+}
+
+div.weatherCol,
+div.weatherColTop {
+	padding: 0;
+	margin: 0;
+}
+
+div.weatherColSm {
+	padding: 0;
+	margin: 0;
+	display: none;
+}
+
+@media (max-width: 970px) {
+	.weatherColTop {
+		display: none;
+	}
+
+	.weatherColSm {
+		display: block !important;
+	}
+}
+
+@media (min-width: 1400px) {
+	div.weatherDiv {
+		height: 120px;
+	}
+}
+
+div#weatherTool{
+/* 	background-color: rgb(255, 240, 225); */
+/* 	background-image: linear-gradient(to top, #fff1eb 10%, #ace0f9 100%); */
+	border: solid 3px rgb(142, 94, 69);
+	box-shadow: 5px 5px 0 #8E5E45
+	
+	}
+
+div.weatherBlock {
+	min-width: 100px;
+	height: 100px;
+	margin: 5px;
+/* 	border: solid 2px rgba(0, 0, 0, 0.1); */
+/* 	border-radius: 5px; */
+/* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-size: larger;
+	font-weight:bold;
+	color: rgb(142, 94, 69);
+	
+	
+	
+
+}
+
+
+
+
+#wtSelect {
+	width: 300px;
+	height: 450px;
+	background-color: rgb(255, 240, 225);
+	border-radius: 5px;
+	position: fixed;
+	z-index: 2;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: expandWidth 1s forwards;
+	display: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+div.wtHead {
+	margin: 0px;
+	padding: 0px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: right;
+}
+
+#wtSelect>div.wtHead>.material-symbols-outlined {
+	user-select: none;
+	font-size: 30px;
+	color: rgb(150, 115, 80);
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24
+}
+
+#wtSelect>.simpleBarCon {
+	display: inline-flex;
+	height: 400px;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+#countyDivID {
+	width: 300px;
+	height: 100%;
+	overflow: scroll;
+	will-change: transform;
+}
+
+div.countyRow,
+div.townRow {
+	font-size: larger;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+	/* text-align: center; */
+	width: 100%;
+	height: 50px;
+}
+
+#townDivID {
+	width: 0px;
+	height: 100%;
+	overflow: scroll;
+	will-change: transform;
+}
+
+div.countyLink,
+div.townLink {
+	color: rgb(150, 115, 80);
+	text-decoration: none;
+	user-select: none;
+	margin: 2px 10px;
+	padding: auto;
+	width: calc(100% - 4px);
+	height: 40px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+#wtSelect div.countyLink:hover {
+	border: 2px solid rgb(150, 115, 80);
+	border-radius: 5px;
+}
+
+#wtSelect div.townLink:hover {
+	border: 2px solid rgb(150, 115, 80);
+	border-radius: 5px;
+}

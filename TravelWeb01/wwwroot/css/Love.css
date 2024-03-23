@@ -1,0 +1,116 @@
+@charset "UTF-8";
+ .homeLeft2 {
+            min-width: 300px;
+            height: 100%;
+            /* background-color: aqua; */
+            margin: 0px;
+            padding: 50px;
+        }
+
+        .homeRight {
+            height: 100%;
+            width: 100%;
+            max-width: 1400px;
+            min-width: 796px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .infoCon {
+            max-width: 1080px;
+            /* background-color: yellowgreen; */
+            margin: 0px;
+            padding: 0px;
+            margin-top: 30px;
+        }
+
+        .dataRow {
+            display: inline-flex;
+            flex-wrap: wrap;
+            /* justify-content: center; */
+        }
+
+        .dataCon {
+            height: 300px;
+            width: 260px;
+            margin: 5px;
+            padding: 10px;
+            /* background-color: rgba(150, 115, 80, 0.6); */
+            background-color:rgb(255, 245, 235);
+            position: relative;
+            border-radius: 15px;
+            border: 5px solid rgba(150, 115, 80, 0.6);
+        }
+
+        .imgCon {
+            height: 135px;
+            max-width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .imgCon>img {
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .dataCon>.material-symbols-outlined {
+            user-select: none;
+            position: absolute;
+            color: violet;
+            left: 212px;
+            top: 15px;
+            font-variation-settings:
+                'FILL' 1,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .dataCon>.material-symbols-outlined:hover {
+            position: absolute;
+            color: white;
+            left: 212px;
+            top: 15px;
+            text-shadow: 0 0 4px rgba(0, 0, 0, 0.6);
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+
+        .dataTitle {
+        	color:black;
+            font-size: large;
+            margin: 0px;
+            padding: 0px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            background-color:rgb(255, 245, 235);
+        }
+
+        .dataTime {
+        	color:black;
+            margin: 0px;
+            padding: 0px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            background-color:rgb(255, 245, 235);
+        }
+
+        .dataPosi {
+        	color:black;
+            margin: 0px;
+            padding: 5px;
+            height: calc(100% - 205px);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color:rgb(255, 245, 235);
+        }

@@ -1,0 +1,51 @@
+.aboutContent {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    color: #333;
+    line-height: 1.6;
+    margin: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    max-width: 1900px;
+    width: 100%;
+}
+
+
+.image {
+    flex: 1;
+    margin-right: 20px;
+    overflow: hidden;
+    /* 新增溢出隱藏 */
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    /* 新增填滿樣式 */
+}
+
+.text {
+    margin-top: 5vw;
+    color: #333;
+    margin-left: 1vw;
+    flex: 1;
+}
+
+
+.aboutContent h2 {
+    text-align: center;
+    margin-top: 4vw;
+    margin-bottom: 2vw;
+    color: rgba(108, 76, 46, 0.836);
+}
+
+.aboutContent ol {
+    color: #333;
+}

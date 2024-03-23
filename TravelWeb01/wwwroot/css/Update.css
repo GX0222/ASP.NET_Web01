@@ -1,0 +1,30 @@
+.homeRight {
+    height: 100%;
+    width: 100%;
+    max-width: 1400px;
+    min-width: 796px;
+    /* background-color: greenyellow; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.infoCon {
+    max-width: 1040px;
+    /* background-color: yellowgreen; */
+    margin: 0px;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+.dataTable {
+    /* background-color: aquamarine; */
+}
+
+.dataTable th {
+    width: 200px;
+}
+
+.dataTable img {
+    width: 200px;
+}

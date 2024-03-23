@@ -1,0 +1,15 @@
+.noSelect {
+    user-select: none;
+}
+
+.BGC_Gray {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.BGC_Green {
+    background-color: rgba(0, 150, 0, 0.3);
+}
+
+.BGC_Coffee {
+    background-color: rgba(150, 115, 80, 0.4) !important;
+}

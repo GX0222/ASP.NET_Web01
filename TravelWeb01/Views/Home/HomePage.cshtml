@@ -1,0 +1,268 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "../Shared/_HomePageNavBar.cshtml";
+}
+<div id="iframeContainer">
+    <iframe id="youtubeIframe"
+            src="https://www.youtube.com/embed/wIf-HN15URA?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&mute=1&loop=1&disablekb=1&enablejsapi=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen> </iframe>
+</div>
+
+
+
+
+<div id="newBG" class="row justify-content-center">
+
+    <!-- -----offcanvas----- -->
+    <div id="myOffcanvas" class="fixedDiv">
+        <a class="btn btn-primary OffcanBtn" data-bs-toggle="offcanvas"
+           href="#offcanvasExample" role="button"
+           aria-controls="offcanvasExample">
+            <img src="<c:url value='/static/image/OffcanvasIcon.png" '  /> class="img-fluid">
+        </a>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1"
+         id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="weatherDivOff">
+                <div class="row p-0 m-0">
+                    <div class="weatherColOff col-4">
+                        <div class="weatherBlock">
+                            台南市<br>將軍區
+                        </div>
+                    </div>
+                    <div class="weatherColOff col-4">
+                        <div class="weatherBlock">${temp1st }℃</div>
+                    </div>
+                    <div class="weatherColOff col-4">
+                        <div class="weatherBlock">降雨機率：20%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="couponGroup" data-simplebar>
+                <c:forEach items="${Taipei }" var="TaipeiEvents">
+                    <div class="couponCon">${TaipeiEvents.getEventInfo() }</div>
+                </c:forEach>
+
+            </div>
+        </div>
+    </div>
+    <!-- -----pageInfo----- -->
+    <div class="homeCenter col-12 col-md-9 order-2 order-md-1">
+        <div class="row m-0 p-0 w-100">
+            <div class="col m-0 p-0">
+                <a href="<c:url value='/EventList#' />" class="aa">
+                    <div id="h1" class="classIcon">
+                        <img src="<c:url value='/static/image/a011.png' />">
+                    </div>
+                </a>
+            </div>
+            <div class="col m-0 p-0">
+                <a href="<c:url value='/EventList#' />" class="aa">
+                    <div id="h2" class="classIcon">
+                        <img src="<c:url value='/static/image/a012.png' />">
+                    </div>
+                </a>
+            </div>
+            <div class="col m-0 p-0">
+                <a href="<c:url value='/EventList#' />" class="aa">
+                    <div id="h3" class="classIcon">
+                        <img src="<c:url value='/static/image/a013.png' />">
+                    </div>
+                </a>
+            </div>
+            <div class="col m-0 p-0">
+                <a href="<c:url value='/EventList#' />" class="aa">
+                    <div id="h4" class="classIcon">
+                        <img src="<c:url value='/static/image/a014.png' />">
+                    </div>
+                </a>
+            </div>
+            <div class="col m-0 p-0">
+                <%-- 					<a href="<c:url value='/Ian/index' />" class="aa">
+                    --%>
+                    <a href="<c:url value='/EventList#' />" class="aa">
+                        <div id="h5" class="classIcon">
+                            <img src="<c:url value='/static/image/a015.png' />">
+                        </div>
+                    </a>
+            </div>
+        </div>
+        <!-- ---------- -->
+        <div id="groupNews" class="">
+            <div class="groupTitle">
+                <h3>最新消息</h3>
+            </div>
+            <div id="news1" class="newsCon selectEventForTrack"
+                 data-event="${eventTop2[0].getId()}">
+                <div class="newsImgCon">
+                    <img class="newsImg"
+                         src="<c:url value='/static/image/news01.jpg' />" alt="">
+                </div>
+                <div class="newsTextCon">
+                    <div class="newsTextBgR">
+                        <div class="newsText">
+                            <div class="newsTextTitle">
+                                <h4 class="newsH4">${eventTop2[0].getEventTitle()}</h4>
+                                <hr>
+                            </div>
+                            <c:set var="trimmedInfo"
+                                   value="${fn:substring(eventTop2[0].getEventInfo(), 0, 50)}" />
+                            ${trimmedInfo}
+                            <c:if test="${fn:length(eventTop2[0].getEventInfo()) > 50}">
+                                ...
+                            </c:if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="news2" class="newsCon selectEventForTrack"
+                 data-event="${eventTop2[1].getId()}">
+                <div class="newsTextCon">
+                    <div class="newsTextBgL">
+                        <div class="newsText">
+                            <div class="newsTextTitle">
+                                <h4 class="newsH4">${eventTop2[1].getEventTitle()}</h4>
+                                <hr>
+                            </div>
+                            <c:set var="trimmedInfo"
+                                   value="${fn:substring(eventTop2[1].getEventInfo(), 0, 50)}" />
+                            ${trimmedInfo}
+                            <c:if test="${fn:length(eventTop2[0].getEventInfo()) > 50}">
+                                ...
+                            </c:if>
+                        </div>
+                    </div>
+                </div>
+                <div class="newsImgCon">
+                    <img class="newsImg"
+                         src="<c:url value='/static/image/news02.jpg' />" alt="">
+                </div>
+            </div>
+
+
+        </div>
+        <!-- ---------- -->
+        <div id="groupCity" class="">
+            <div class="groupTitle">
+                <h3>縣市踩點</h3>
+            </div>
+            <div class="row justify-content-center m-0 p-0">
+                <div class="col-12 col-lg-8 m-0 p-0">
+                    <div class="row justify-content-center m-0 p-0">
+
+                        <div class="cityCol col-6">
+                            <a href="<c:url value='/EventList#' />" class="newsA">
+                                <div id="c0" class="cityDiv card">
+                                    <img class="cityImg rounded card-img-top"
+                                         src="<c:url value='/static/image/台北市.png' />">
+                                    <div class="card-img-overlay">
+                                        <h3 class="card-title">台北市</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="cityCol col-6">
+                            <a href="<c:url value='/EventList#' />" class="newsA">
+                                <div id="c1" class="cityDiv card">
+                                    <img class="cityImg rounded card-img-top"
+                                         src="<c:url value='/static/image/新北市.png' />">
+                                    <div class="card-img-overlay">
+                                        <h3 class="card-title">新北市</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cityCol col-0 col-lg-4">
+                    <a href="<c:url value='/EventList#' />" class="newsA">
+                        <div id="c2" class="cityDiv card">
+                            <img class="cityImgV2 rounded card-img-top"
+                                 src="<c:url value='/static/image/桃園市.png' />">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">桃園市</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center m-0 p-0">
+                <div class="cityColV2 col-4">
+                    <a href="<c:url value='/EventList#' />" class="newsA">
+                        <div id="c3" class="cityDiv card">
+                            <img class="cityImg rounded card-img-top"
+                                 src="<c:url value='/static/image/台中市.png' />">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">台中市</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cityColV2 col-4">
+                    <a href="<c:url value='/EventList#' />" class="newsA">
+                        <div id="c4" class="cityDiv card">
+                            <img class="cityImg rounded card-img-top"
+                                 src="<c:url value='/static/image/台南市.png' />">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">台南市</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="cityColV2 col-4">
+                    <a href="<c:url value='/EventList#' />" class="newsA">
+                        <div id="c5" class="cityDiv card">
+                            <img class="cityImg rounded card-img-top"
+                                 src="<c:url value='/static/image/高雄市.png' />">
+                            <div class="card-img-overlay">
+                                <h3 class="card-title">高雄市</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- ---------- -->
+
+    <div class="homeRight col-0 col-md-3 order-1 order-md-2">
+        <jsp:include page="WeatherTool/WeatherTool.jsp"></jsp:include>
+        <div class="smallNewsGroup" data-simplebar>
+            <c:forEach items="${smallNews }" var="smallNew">
+                <div class="smallNews">
+                    <a class="smallNewsa eventLink selectEvent" data-event="${smallNew.getId() }"
+                       data-track="false">
+                        <div class="snTitle">${smallNew.getEventTitle() } →</div>
+                        <!-- 						<div class="snTime"> -->
+                        <%-- 							${smallNew.getStartTime() } --%>
+                        <!-- 						</div> -->
+                        <!-- 						<div class="snLocation"> -->
+                        <hr>
+                        <div class="snInfo">${smallNew.getLocation() }</div>
+                        <!-- 						</div> -->
+                        <!-- 						<div class="snInfo"> -->
+                        <%-- 							${smallNew.getEventInfo() } --%>
+                        <!-- 						</div> -->
+                </div>
+                </a>
+            </c:forEach>
+        </div>
+    </div>
+</div>

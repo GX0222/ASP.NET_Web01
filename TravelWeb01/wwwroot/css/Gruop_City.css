@@ -1,0 +1,82 @@
+#groupCity {
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin: 0px;
+    padding: 5px;
+}
+
+div.cityCol {
+    max-width: 100%;
+    min-width: 230px;
+    height: 230px;
+    margin: 0px;
+    padding: 5px;
+    /* border: solid 2px;
+    border-radius: 5px; */
+}
+
+div.cityColV2 {
+    max-width: 100%;
+    min-width: 230px;
+    height: 230px;
+    margin: 0px;
+    padding: 5px;
+    /* border: solid 2px;
+    border-radius: 5px; */
+}
+
+div.cityDiv {
+    width: 100%;
+    height: 100%;
+    /* border: 2px;
+    border-radius: 5px; */
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+img.cityImg {
+    width: auto;
+    height: 110%;
+}
+
+img.cityImgV2 {
+    width: auto;
+    height: 110%;
+}
+
+@media screen  and (max-width: 992px){
+    img.cityImgV2 {
+        width: 100%;
+        height: auto;
+    }
+    div.cityColV2 {
+        min-width: 150px;
+        height: 150px;
+    }
+}
+
+div.cityDiv>div.card-img-overlay {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+div.cityDiv>div.card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+div.cityDiv>div.card-img-overlay>h3 {
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+}

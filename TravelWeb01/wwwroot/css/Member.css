@@ -1,0 +1,83 @@
+			@charset "UTF-8";
+			
+			.homeRight {
+				height: 100%;
+				width: 100%;
+				max-width: 1400px;
+				/* background-color: greenyellow; */
+				display: flex;
+				/* align-items: center; */
+				justify-content: center;
+			}
+			
+			.homeRight>div {
+				width: 100%;
+				max-width: 800px;
+			}
+			
+/* 			.memberInfo { */
+/* 				width: 100%; */
+/* 				max-width: 800px; */
+/* 				height: 300px; */
+/* 				padding: 0px; */
+/* 				background-color: blueviolet; */
+/* 				display: inline-flex; */
+/* 				margin: 0 auto; */
+/* 			} */
+/* 			新改的 */
+			.memberInfo {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				height: 30vh; /* 設定高度為視窗高度的 100% */
+				margin-top: 3vw;
+			}
+			
+			.memberImg {
+				aspect-ratio: 1/1;
+				margin: 0px;
+				padding: 10px;
+				/* background-color: blue; */
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				transform:scale(1,1);
+				transition: all 1s ease-out;
+			}
+			
+			.memberImg:hover{
+				transform:scale(1.2,1.2);
+			}
+			
+			.memberImg>img {
+				max-width: 100%;
+				max-height: 100%;
+				margin: 0px;
+				aspect-ratio: 1/1;
+				outline: 1px solid rgba(0, 0, 0, 0.2);
+			}
+			
+			.memberLV {
+				margin: 0px;
+				padding: 0px;
+				/* width: calc(100% - 300px); */
+				width: 100%;
+				height: 100%;
+				background-color: aquamarine;
+			}
+			
+			.memberForm {
+				margin: 0px;
+				padding: 40px;
+				height: auto;
+				width: 100%;
+				max-width: 800px;
+				/* border: 1px solid black; */
+				display: flex;
+				justify-content: center;
+			}
+			
+			.likeCheck>.form-check {
+				width: 150px;
+			}

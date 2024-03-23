@@ -1,0 +1,42 @@
+/*********************************info_nav**********************************************/
+
+#info-ulbar {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-ulbar h4 {
+    color: rgba(152, 115, 78, 0.4);
+}
+
+#info-bar {
+    display: inline-block;
+    margin: 1.5%;
+    font-size: 18px;
+}
+
+#info-bar a {
+    text-decoration: none;
+}
+
+#info-bar a:link {
+    color: rgb(0, 0, 0);
+}
+
+#info-bar a:visited {
+    color: rgb(0, 0, 0);
+}
+
+#info-bar a:hover {
+    color: white;
+    border-radius: 10px;
+    padding: 0.5rem;
+    background-color: rgba(152, 115, 78, 0.4);
+}
+
+.nav-pills>li>a.active {
+    color: #ffffff !important;
+    background-color: rgba(152, 115, 78, 0.4) !important;
+}

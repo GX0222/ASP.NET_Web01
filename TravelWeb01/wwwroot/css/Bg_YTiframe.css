@@ -1,0 +1,29 @@
+/* 觀景窗 */
+#iframeContainer {
+    position: relative;
+    width: 100%;
+    height: 40vw;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#youtubeIframe{
+    margin-top: 0px;
+    margin-left: 0PX;
+    width: 100%;
+    height: 20000px;
+}
+
+/* 遮蓋影片 */
+#overlayDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40vw;
+    pointer-events: auto;
+}

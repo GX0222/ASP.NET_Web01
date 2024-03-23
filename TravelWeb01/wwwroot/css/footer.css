@@ -1,0 +1,35 @@
+/*********************************footer**********************************************/
+
+.footer {
+    width: auto;
+    max-width: 100%;
+    background: rgba(166, 122, 78, 0.331);
+    padding: 10px;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.ftinfo {
+    color: #6e6e6e;
+    padding-left: 1rem;
+}
+
+.ftinfo a {
+    text-decoration: none;
+    color: #848484;
+}
+
+.ftinfo a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.st {
+    width: auto;
+    max-width: 100%;
+    margin: 0px;
+    text-align: center;
+    background: rgb(142, 94, 69);
+    padding: 8px;
+    color: #ffffff;
+
+}

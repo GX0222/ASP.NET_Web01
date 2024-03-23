@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+#ChatRoomCon {
+	position: fixed;
+	z-index: 87;
+	margin: 10px;
+	padding: 0;
+	/* background-color: aqua; */
+	height: 80px;
+	width: 80px;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#ChatRoomCon .ChatRoom {
+/* 	background-color: white; */
+	border-radius: 5px;
+	margin: 5px;
+/* 	border: 2px solid rgb(142, 94, 69); */
+	aspect-ratio: 1/1;
+}
+
+.azxc{
+	width: 100%;
+	height: 100%;
+	
+}
+
+.CRSelected {
+/* 	box-shadow: 0 0 5px; */
+}
+
+.NewMesg {
+/* 	box-shadow: 0 0 5px red; */
+/* 	border: 2px solid red; */
+}
+
+#ChatRoomCon>.ChatRoom>.Room {
+	position: absolute;
+	background-color: white;
+	border-radius: 5px;
+	margin: 0px;
+	border: 2px solid rgb(142, 94, 69);
+	right: 90px;
+	bottom: 0px;
+	height: 0px;
+	width: 0px;
+	display: none;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRText {
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: calc(100% - 50px);
+	/* border: 2px solid rgb(142, 94, 69); */
+	/* background-color: aquamarine; */
+}
+
+div.CRText div.resBigBox{
+	margin: 0px;
+	padding: 5px;
+	width: 100%;
+}
+
+div.CRText div.selfBigBox{
+	margin: 0px;
+	padding: 5px;
+	width: 100%;
+}
+
+div.CRText div.selfBigBox > div {
+    margin-left: auto;
+}
+
+div.CRText div.resMemInfo{
+	/* background-color: rgb(142, 94, 69); */
+	margin: 0px;
+	padding: 0px;
+	max-width: 150px;
+	white-space: pre-wrap;
+	display: inline-flex;
+}
+
+div.CRText div.resMemName{
+	/* background-color: aqua; */
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	margin: 0px;
+	margin-left: 5px;
+}
+
+div.CRText div.resMesg {
+	background-color: rgb(142, 94, 69);
+	color: white;
+	max-width: 200px;
+	width: fit-content;
+	font-size: 18px;
+	margin: 0px;
+	margin-top: 2px;
+	padding: 5px;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+div.CRText div.selfMesg {
+	border: 2px solid rgb(142, 94, 69);
+	max-width: 200px;
+	width: fit-content;
+	font-size: 18px;
+	margin: 0px;
+	margin-top: 2px;
+	padding: 5px;
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+img.resMemImg{
+	height: 30px;
+	width: 30px;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput {
+	min-height: 50px;
+	max-height: 144px;
+	height: auto;
+	margin: 0px;
+	padding: 5px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>input,
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>p{
+	margin: 0px;
+	padding: 5px 5px 5px 5px;
+	min-height: 40px;
+	max-height: 110px;
+	height: auto;
+	width: 250px;
+	border: 2px solid rgb(142, 94, 69);
+	border-radius: 5px;
+  	font-size: 16px;
+	  /* white-space: pre-wrap; */
+	  overflow-wrap: break-word;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>span{
+	margin: 0px;
+	padding: 0px;
+	height: 40px;
+	width: 40px;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>input:focus,
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>p:focus {
+	outline: none;
+}
+
+#ChatRoomCon > .ChatRoom > .Room > .CRInput > p * {
+    outline: none !important;
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>p .simplebar-content{
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+#ChatRoomCon>.ChatRoom>.Room>.CRInput>p .simplebar-content:not(:focus):empty:before {
+	content: "Aa";
+	color: gray;
+}
+
+#ChatRoomCon .material-symbols-outlined {
+	color: rgb(142, 94, 69);
+	text-shadow: none !important;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 15
+}
+

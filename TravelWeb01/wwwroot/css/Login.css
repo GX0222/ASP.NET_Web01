@@ -1,0 +1,190 @@
+/* 基本css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    background-color: #ffffffc1;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: flex-start;
+}
+
+.remember-me label {
+    margin: 0;
+    color: #555;
+}
+
+.forgot-password a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.login-btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+.social-login {
+    margin-top: 30px;
+}
+
+.social-login img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* 背景css */
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    transition: background 5s ease-in-out;
+    animation: backgroundAnimation 150s infinite alternate;
+    /* 背景動畫 */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+@keyframes backgroundAnimation {
+
+    0%,
+    100% {
+        background-image: url('../image/loginBG01.jpg');
+    }
+
+    15%,
+    90% {
+        background-image: url('../image/loginBG02.jpg');
+    }
+
+    23%,
+    80% {
+        background-image: url('../image/loginBG03.jpg');
+    }
+
+    30%,
+    70% {
+        background-image: url('../image/loginBG04.jpg');
+    }
+
+    40%,
+    60% {
+        background-image: url('../image/loginBG05.jpg');
+    }
+
+    50% {
+        background-image: url('../image/loginBG06.jpg');
+    }
+
+    60% {
+        background-image: url('../image/loginBG07.jpg');
+    }
+
+
+    70% {
+        background-image: url('../image/loginBG08.jpg');
+
+    }
+
+    80% {
+        background-image: url('../image/loginBG09.jpg');
+
+    }
+
+    90% {
+        background-image: url('../image/loginBG05.jpg');
+
+    }
+}
+
+
+
+
+
+/* 其他樣式 */
+.content {
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}

@@ -1,0 +1,101 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.info {
+    max-width: 1400px;
+    min-width: 500px;
+    margin: 0px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+div.center {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.eTitle {
+    height: 150px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(152, 115, 78, 0.4);
+}
+
+.eTitle h1 {
+    margin: 0;
+}
+
+div.eImgCon {
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.eImgCon img {
+    width: 100%;
+    object-fit: cover;
+}
+
+div.eInfo {
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 20px 5%;
+}
+
+.eInfo table {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.eInfo th, .eInfo td {
+    width: 30%;
+    font-size: 18px;
+}
+
+div.eTextCon {
+    margin: 0px;
+    margin-top: 40px;
+    padding: 20px;
+    height: auto;
+    border: 1px solid rgba(152, 115, 78, 0.4);
+}
+
+.eTextCon p {
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 2.5;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+}
+
+.eMapCon {
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+    width: 600px;
+}
+
+.eMapTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.hasfavor{
+	background-color: pink;
+	
+}
